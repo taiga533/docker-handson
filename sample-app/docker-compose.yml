@@ -3,6 +3,7 @@ services:
   db:
     image: mysql:8
     environment:
+      # ここはMysql独自の設定なのでdockerに関係なし
       MYSQL_DATABASE: test
       MYSQL_USER: test
       MYSQL_PASSWORD: test
@@ -11,6 +12,8 @@ services:
       - db_data:/var/lib/mysql
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
+      # mysqladmin ping -h localhostコマンドが成功すれば
+      # このコンテナは正常に動作していると判断する
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
       timeout: 15s
       retries: 5
@@ -20,6 +23,7 @@ services:
       - "8080:80"
     depends_on:
       db:
+        # DBコンテナが正常に動作しているときのみ起動
         condition: service_healthy
 
 volumes:
