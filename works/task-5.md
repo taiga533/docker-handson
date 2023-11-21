@@ -51,7 +51,7 @@ Press CTRL+C to quit
 ```
 
 ## 3. アプリにブラウザからアクセスしてみよう
-https://localhost:8080にアクセスしてみよう。
+https://localhost:8080 にアクセスしてみよう。
 以下のような画面が表示されれば成功。  
 ![chromeでsample-appの画面が表示されている](../img/task-5.png)
 

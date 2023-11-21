@@ -31,7 +31,7 @@ sample-app-app-1  |  * Serving Flask app 'app'
 sample-app-app-1  |  * Running on http://127.0.0.1:80
 ```
 ## 3. アプリにブラウザからアクセスしてみよう
-https://localhost:8080/usersにアクセスしてみよう。
+https://localhost:8080/users にアクセスしてみよう。
 以下のような画面が表示されれば成功。  
 ![chromeでsample-appの画面が表示されている](../img/task-6.png)
 
