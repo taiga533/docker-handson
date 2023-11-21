@@ -9,7 +9,7 @@ docker-compose up
 ```
 
 ### コマンドの解説
-- docker-compose up
+- docker compose up
     - 現在のディレクトリ以下にあるdocker-compose.ymlを読み込んでサービスを起動するコマンド
 
 ### 期待結果
